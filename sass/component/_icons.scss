@@ -1,0 +1,132 @@
+.icon {
+  z-index: 2;
+  fill: var(--fill-icon);
+
+  &:focus,
+  &:hover {
+    fill: var(--brand-color);
+    outline: none;
+  }
+}
+.modal__icon {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+.feature__section--icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background: var(--secondary-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+}
+.icon__team--section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-left: 0;
+  gap: 10px;
+  border-radius: 50%;
+
+  &--web {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}
+
+.icon__team {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+    fill: var(--primary-white-color);
+    border-radius: 50%;
+    outline: none;
+  }
+}
+.customer__section--icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-left: 0;
+
+  &--link {
+    padding-top: 0;
+    flex-basis: calc((100% - 150px) / 6);
+    width: 170px;
+  }
+}
+.customer__icon {
+  border: 1px solid var(--fill-icon);
+  border-radius: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 81px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--brand-color);
+    border-radius: 4px;
+  }
+}
+
+.footer__icon {
+  cursor: pointer;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: var(--primary-white-color);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    background-color: var(--brand-color);
+    outline: none;
+  }
+}
+.footer__container--icon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  gap: 10px;
+
+  &--link {
+    flex-basis: calc((100% - 30px) / 4);
+  }
+}
+.footer__button--icon {
+  position: absolute;
+  fill: var(--primary-white-color);
+  right: 12px;
+}

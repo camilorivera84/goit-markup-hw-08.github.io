@@ -1,0 +1,30 @@
+.feature__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 0;
+  padding-top: 0;
+
+  &--box {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+
+  &--title {
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    letter-spacing: 0.03em;
+  }
+
+  &--text {
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--secondary-text-color);
+    margin-bottom: 0px;
+  }
+}

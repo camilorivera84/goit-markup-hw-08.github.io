@@ -1,0 +1,88 @@
+.hero__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  width: 696px;
+  margin-top: 0px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.modal__container--title {
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: Center;
+  width: 448px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+.modal__title {
+  margin-bottom: 12px;
+}
+.feature__section--title {
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--primary-text-color);
+  margin-bottom: 10px;
+  letter-spacing: 0.03em;
+}
+.work__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 55px;
+}
+.team__section--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
+.customer__section--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--primary-text-color);
+  margin-bottom: 44px;
+}
+.footer__social--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--primary-white-color);
+  margin-bottom: 20px;
+}
+.footer__subscribe--title {
+  font-size: 14px;
+  line-height: 1.2;
+  line-height: 100%;
+  text-align: Left;
+  color: var(--primary-white-color);
+  text-transform: uppercase;
+  width: 275px;
+}
+.portfolio__poster--title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--primary-text-color);
+  text-transform: capitalize;
+  margin-bottom: 4px;
+}

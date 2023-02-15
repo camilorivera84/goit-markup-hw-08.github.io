@@ -1,0 +1,74 @@
+.footer__form {
+  gap: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.footer__subscribe {
+  margin-left: auto;
+  height: 86px;
+
+  &--title {
+    font-size: 14px;
+    line-height: 1.2;
+    text-align: Left;
+    color: var(--primary-white-color);
+    text-transform: uppercase;
+    width: 275px;
+  }
+  &--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &--placeholder {
+    font-size: 16px;
+    line-height: 20px;
+    line-height: 107%;
+    text-align: Left;
+  }
+  &--button {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    padding: 0;
+    border: 0;
+    background-color: var(--brand-color);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+    color: var(--primary-white-color);
+  }
+
+  &--email {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    color: var(--primary-white-color);
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    padding-left: 16px;
+  }
+}
+.footer__button--text {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.06em;
+  color: var(--primary-white-color);
+
+  &--icon {
+    position: absolute;
+    fill: var(--primary-white-color);
+    right: 12px;
+  }
+}

@@ -1,0 +1,78 @@
+.team__section {
+  background-color: var(--secondary-background-color);
+
+  &--title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-top: 0px;
+    margin-bottom: 50px;
+  }
+
+  &--actors {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    gap: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
+.team__celebrity {
+  background-color: var(--primary-white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  padding-bottom: 0;
+  padding-top: 0;
+  flex-basis: calc((100% - 90px) / 4);
+}
+.team.images {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.feature__actor {
+  padding-top: 30px;
+
+  &--name {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 10px;
+    padding-bottom: 0;
+  }
+
+  &--profession {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--primary-enlace-color);
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+}
+.icon__team--section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 30px;
+  padding-left: 0;
+  gap: 10px;
+  border-radius: 50%;
+
+  &--web {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

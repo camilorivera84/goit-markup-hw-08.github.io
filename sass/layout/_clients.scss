@@ -1,0 +1,29 @@
+.customer__section {
+  padding-top: 59px;
+  padding-bottom: 151px;
+
+  &--title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--primary-text-color);
+    margin-bottom: 44px;
+  }
+
+  &--icon {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-left: 0;
+  }
+
+  &--icon--link {
+    padding-top: 0;
+    flex-basis: calc((100% - 150px) / 6);
+    width: 170px;
+  }
+}
