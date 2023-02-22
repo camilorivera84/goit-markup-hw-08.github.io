@@ -76,3 +76,43 @@
     flex-basis: calc((100% - 90px) / 4);
   }
 }
+.team__image {
+  width: 270px;
+}
+@media (max-width: 480px) {
+  .team__section--actors {
+    padding-bottom: 60px;
+  }
+
+  .team__section {
+    width: 480px;
+  }
+
+  .team__celebrity {
+    width: 450px;
+  }
+  .team.images {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .feature__actor {
+    padding-top: 30px;
+  }
+
+  .team__image {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .team__section--actors {
+    width: 738px;
+    padding-bottom: 60px;
+  }
+  .team__section--title {
+    margin-bottom: 30px;
+  }
+  .team__image {
+    width: 354px;
+  }
+}

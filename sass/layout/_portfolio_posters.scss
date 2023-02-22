@@ -90,3 +90,32 @@
     opacity: 1;
   }
 }
+@media (max-width: 480px) {
+  .portfolio__container--poster {
+    width: 450px;
+  }
+  .portfolio__poster {
+    width: 450px;
+  }
+  .portfolio__poster--link {
+    width: 450px;
+  }
+  .portfolio__poster--image {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio__container--poster {
+    width: 768px;
+    margin-bottom: 60px;
+  }
+  .portfolio__poster {
+    width: 354px;
+  }
+  .portfolio__poster--link {
+    width: 354px;
+  }
+  .portfolio__poster--image {
+    width: 354px;
+  }
+}

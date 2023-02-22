@@ -19,7 +19,7 @@
     <header class="header__border">
       <div class="container header__container">
         <nav class="header__menu">
-          <a class="logo" href="index.html">Webstudio</a>
+          <a class="logo" href="index.html">Web<span>studio</span></a>
           <ul class="list header__pages">
             <li id="current" class="header__list--item">
               <a class="list header__link--pages current" href="index.html"
@@ -38,7 +38,7 @@
         </nav>
 
         <ul class="header__list--contact">
-          <li class="header__list--item">
+          <li class="header__list--item header__list--tablet">
             <a
               class="list link header__list--contact icon"
               href="mailto: info@devstudio.com"
@@ -49,7 +49,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="header__list--item">
+          <li class="header__list--item header__list--tablet">
             <a
               class="list link header__list--contact icon"
               href="tel: +1-212-772-4150"
@@ -61,6 +61,105 @@
             </a>
           </li>
         </ul>
+        <div class="container__mobile">
+          <button
+            class="menu-toggle js-open-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+          >
+            <svg
+              class="icon__menu--mobile"
+              width="24"
+              height="24"
+              fill="currentColor"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </div>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <button class="menu-toggle js-close-menu modal__button--exit">
+            <svg width="30" height="30">
+              <use href="./images/symbol-defs.svg#icon-close-1"></use>
+            </svg>
+          </button>
+          <div class="mobile__pages">
+            <ul class="mobile-menu">
+              <li>
+                <a href="index.html" class="link__mobile">Studio</a>
+              </li>
+              <li>
+                <a href="portfolio.html" class="link__mobile">Portfolio</a>
+              </li>
+              <li>
+                <a href="index.html" class="link__mobile">Contacts</a>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts__mobile">
+            <ul class="mobile__list--contact">
+              <li class="mobile__list--item">
+                <a
+                  class="list link mobile__list--contact-tel"
+                  href="tel: +1-212-772-4150"
+                >
+                  +1-212-772-4150
+                </a>
+              </li>
+              <li class="mobile__list--item">
+                <a
+                  class="list link mobile__list--contact--email"
+                  href="mailto: info@devstudio.com"
+                >
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mobile__web">
+            <ul class="mobile__web--menu">
+              <li>
+                <a href="https://www.instagram.com/" class="link__mobile--web"
+                  >Instagram</a
+                >
+              </li>
+              <div class="mobile__web_line"></div>
+              <li>
+                <a href="https://twitter.com/?lang=es" class="link__mobile--web"
+                  >twitter</a
+                >
+              </li>
+              <div class="mobile__web_line"></div>
+              <li>
+                <a
+                  href="https://web.facebook.com/?_rdc=1&_rdr"
+                  class="link__mobile--web"
+                  >Facebook</a
+                >
+              </li>
+              <div class="mobile__web_line"></div>
+              <li>
+                <a href="https://co.linkedin.com/" class="link__mobile--web"
+                  >Linkedin</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <script
+          defer
+          src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+          integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+          crossorigin="anonymous"
+        ></script>
+        <script defer src="js/mobile-menu.js"></script>
       </div>
     </header>
     <main>
@@ -180,8 +279,8 @@
           <ul class="team__section--actors">
             <li class="list team__celebrity">
               <img
+                class="team__image"
                 src="./images/img4.jpg"
-                width="270"
                 alt="Christopher Walker"
               />
               <div class="feature__actor">
@@ -227,7 +326,11 @@
             </li>
 
             <li class="list team__celebrity">
-              <img src="./images/img5.jpg" width="270" alt="Kylie Evans" />
+              <img
+                class="team__image"
+                src="./images/img5.jpg"
+                alt="Kylie Evans"
+              />
               <div class="feature__actor">
                 <h3 class="feature__actor--name">Kylie Evans</h3>
                 <p class="feature__actor--profession">Frontend Developer</p>
@@ -270,7 +373,11 @@
               </div>
             </li>
             <li class="list team__celebrity">
-              <img src="./images/img6.jpg" width="270" alt="Ryan Harris" />
+              <img
+                class="team__image"
+                src="./images/img6.jpg"
+                alt="Ryan Harris"
+              />
               <div class="feature__actor">
                 <h3 class="feature__actor--name">Ryan Harris</h3>
                 <p class="feature__actor--profession">Marketing</p>
@@ -313,7 +420,11 @@
               </div>
             </li>
             <li class="list team__celebrity">
-              <img src="./images/img7.jpg" width="270" alt="Tyler Moore" />
+              <img
+                class="team__image"
+                src="./images/img7.jpg"
+                alt="Tyler Moore"
+              />
               <div class="feature__actor">
                 <h3 class="feature__actor--name">Tyler Moore</h3>
                 <p class="feature__actor--profession">UI Designer</p>
@@ -408,58 +519,62 @@
     </main>
     <footer class="footer__section">
       <div class="container container__footer">
-        <div>
-          <a class="logo__footer" href="WebStudio">WebStudio</a>
-          <address class="">
-            <a
-              class="contacts__site"
-              href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
-              >695Park Ave, New York, NY 10065 United States</a
+        <div class="container_footer--tablet">
+          <div class="container__contacts--footer">
+            <a class="logo__footer" href="WebStudio"
+              >Web<span class="span__logo--footer">studio</span></a
             >
-            <ul class="link list__contact--footer">
-              <li class="contact--footer">
-                <a class="link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+            <address class="">
+              <a
+                class="contacts__site"
+                href="https://goo.gl/maps/ua91CeisvxC2wW5t7"
+                >695Park Ave, New York, NY 10065 United States</a
+              >
+              <ul class="link list__contact--footer">
+                <li class="contact--footer">
+                  <a class="link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact--footer">
+                  <a class="link" href="tel:+1-212-772-4150">+1-212-772-4150</a>
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="container__social--footer">
+            <h3 class="footer__social--title">Find us</h3>
+            <ul class="list footer__container--icon">
+              <li class="footer__container--icon--link">
+                <a class="footer__icon" href="www.instagram.com">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="contact--footer">
-                <a class="link" href="tel:+1-212-772-4150">+1-212-772-4150</a>
+              <li class="footer__container--icon--link">
+                <a class="footer__icon" href="www.twitter.com">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__container--icon--link">
+                <a class="footer__icon" href="www.facebook.com">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__container--icon--link">
+                <a class="footer__icon" href="www.linkedin.com">
+                  <svg width="20" height="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div>
-          <h3 class="footer__social--title">Find us</h3>
-          <ul class="list footer__container--icon">
-            <li class="footer__container--icon--link">
-              <a class="footer__icon" href="www.instagram.com">
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__container--icon--link">
-              <a class="footer__icon" href="www.twitter.com">
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__container--icon--link">
-              <a class="footer__icon" href="www.facebook.com">
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__container--icon--link">
-              <a class="footer__icon" href="www.linkedin.com">
-                <svg width="20" height="20">
-                  <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer__subscribe">
           <p class="footer__subscribe--title">subscribe to the newsletter</p>
@@ -470,7 +585,7 @@
               autocomplete="on"
               novalidate
             >
-              <div>
+              <div class="container__subscribe--email">
                 <label>
                   <input
                     class="input footer__subscribe--email"
@@ -585,8 +700,12 @@
               </label>
 
               <span class="modal__terms">
-                I am agree with the newsletter and accept the Terms and
-                Conditions
+                I am agree with the newsletter and accept the
+                <u
+                  ><a class="modal__terms--conditions">
+                    Terms and Conditions</a
+                  ></u
+                >
               </span>
             </div>
 

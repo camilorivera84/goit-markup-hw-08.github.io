@@ -28,3 +28,13 @@
     margin-bottom: 0px;
   }
 }
+@media (max-width: 480px) {
+  .feature__section--icon {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .feature__section--icon {
+    width: 354px;
+  }
+}
