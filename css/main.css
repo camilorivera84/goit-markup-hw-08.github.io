@@ -30,6 +30,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background-color: var(--primary-white-color);
+  overflow-x: hidden;
 }
 
 h1,
@@ -64,47 +65,11 @@ p {
   margin: 0px;
 }
 
-@media (max-width: 480px) {
-  body {
-    font-size: 14px;
-    font-family: "Roboto", sans-serif;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    background-color: var(--primary-white-color);
-  }
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p {
-    margin-top: 0;
-  }
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-  .container {
-    width: 480px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-  }
-  .link {
-    color: var(--secondary-text-color);
-  }
-  .list {
-    list-style: none;
-    padding-left: 0px;
-    margin: 0px;
-  }
-}
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 @media (max-width: 480px) {
@@ -120,6 +85,15 @@ p {
     width: 768px;
     margin-right: 0;
     margin-left: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     overflow: hidden;
   }
 }
@@ -1702,6 +1676,11 @@ u {
     width: 450px;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .footer__section {
+    width: 1200px;
+  }
+}
 .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1768,10 +1747,10 @@ u {
 
 .header__list--contact {
   list-style: none;
+  margin-left: 330px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1845,8 +1824,6 @@ u {
   .header__list--contact {
     display: none;
   }
-}
-@media (max-width: 480px) {
   .menu {
     display: none;
   }
@@ -2037,19 +2014,20 @@ u {
         -ms-flex-direction: column;
             flex-direction: column;
     display: block;
-    padding-left: 43px;
+    margin-left: 86px;
   }
   .header__list--tablet {
-    margin-right: auto;
+    margin-right: 0;
   }
 }
 .hero__section {
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: url(../images/Imagen_hero.jpg);
+  background-image: url(/images/Imagen_hero@pc.jpg);
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+  width: auto;
 }
 
 .hero__content {
@@ -2110,6 +2088,24 @@ u {
     padding-bottom: 0px;
     width: 768px;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-image: url(/images/Imagen_hero@tablet.jpg);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .hero__section {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 1200px;
+    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2388,6 +2384,9 @@ u {
   }
 }
 @media screen and (min-width: 481px) and (max-width: 768px) {
+  .team__section {
+    width: 768px;
+  }
   .team__section--actors {
     width: 738px;
     padding-bottom: 60px;
@@ -2397,5 +2396,10 @@ u {
   }
   .team__image {
     width: 354px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .team__section {
+    width: 1200px;
   }
 }/*# sourceMappingURL=main.css.map */

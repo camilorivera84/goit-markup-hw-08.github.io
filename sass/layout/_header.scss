@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
 }
-
 .header__border {
   border-bottom: 1px solid #eeeeee;
 }
@@ -54,9 +53,10 @@
 
 .header__list--contact {
   list-style: none;
+  margin-left: 330px;
   display: flex;
-  margin-left: auto;
   align-items: center;
+
   margin-bottom: 0;
   margin-top: 0;
   padding-left: 0;
@@ -109,6 +109,7 @@
     outline: none;
   }
 }
+
 @media (min-width: 481px) {
   .menu-container {
     display: none;
@@ -121,8 +122,7 @@
   .header__list--contact {
     display: none;
   }
-}
-@media (max-width: 480px) {
+
   .menu {
     display: none;
   }
@@ -297,9 +297,9 @@
   .header__list--contact {
     flex-direction: column;
     display: block;
-    padding-left: 43px;
+    margin-left: 86px;
   }
   .header__list--tablet {
-    margin-right: auto;
+    margin-right: 0;
   }
 }

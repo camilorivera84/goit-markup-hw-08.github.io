@@ -1,8 +1,8 @@
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media (max-width: 480px) {
   .container {
@@ -17,6 +17,15 @@
     width: 768px;
     margin-right: 0;
     margin-left: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
     overflow: hidden;
   }
 }

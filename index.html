@@ -39,10 +39,7 @@
 
         <ul class="header__list--contact">
           <li class="header__list--item header__list--tablet">
-            <a
-              class="list link header__list--contact icon"
-              href="mailto: info@devstudio.com"
-            >
+            <a class="list link icon" href="mailto: info@devstudio.com">
               <svg width="16" height="12">
                 <use href="./images/symbol-defs.svg#icon-sobre-activable"></use>
               </svg>
@@ -50,10 +47,7 @@
             </a>
           </li>
           <li class="header__list--item header__list--tablet">
-            <a
-              class="list link header__list--contact icon"
-              href="tel: +1-212-772-4150"
-            >
+            <a class="list link icon" href="tel: +1-212-772-4150">
               <svg width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-telfono"></use>
               </svg>
@@ -61,7 +55,8 @@
             </a>
           </li>
         </ul>
-        <div class="container__mobile">
+
+        <div class="container__mobile is-hidden">
           <button
             class="menu-toggle js-open-menu"
             aria-expanded="false"
@@ -83,7 +78,10 @@
             </svg>
           </button>
         </div>
-        <div class="menu-container js-menu-container" id="mobile-menu">
+        <div
+          class="menu-container js-menu-container menu__mobile--hidden"
+          id="mobile-menu"
+        >
           <button class="menu-toggle js-close-menu modal__button--exit">
             <svg width="30" height="30">
               <use href="./images/symbol-defs.svg#icon-close-1"></use>
