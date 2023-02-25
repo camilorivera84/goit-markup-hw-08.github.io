@@ -106,3 +106,28 @@
     display: none;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 0px;
+  }
+  .container__image--work1 {
+    display: none;
+  }
+  .container__image--work2 {
+    display: none;
+  }
+  .container__image--work3 {
+    display: none;
+  }
+  .work__container {
+    display: none;
+  }
+
+  .work__title {
+    display: none;
+  }
+  .work__photos {
+    display: none;
+  }
+}

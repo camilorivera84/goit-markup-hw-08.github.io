@@ -18,8 +18,32 @@
   <body>
     <header class="header__border">
       <div class="container header__container">
-        <nav class="header__menu">
+        <div class="menu__mobile">
           <a class="logo" href="index.html">Web<span>studio</span></a>
+          <div class="container__mobile is-hidden">
+            <button
+              class="menu-toggle js-open-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <svg
+                class="icon__menu--mobile"
+                width="24"
+                height="24"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <nav class="header__menu">
           <ul class="list header__pages">
             <li id="current" class="header__list--item">
               <a class="list header__link--pages current" href="index.html"
@@ -56,28 +80,6 @@
           </li>
         </ul>
 
-        <div class="container__mobile is-hidden">
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg
-              class="icon__menu--mobile"
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
-        </div>
         <div
           class="menu-container js-menu-container menu__mobile--hidden"
           id="mobile-menu"

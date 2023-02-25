@@ -3,7 +3,6 @@ body {
   width: 100% !important;
   overflow-x: hidden !important;
 }
-
 body {
   font-size: 14px;
   font-family: 'Roboto', sans-serif;
@@ -19,6 +18,7 @@ h5,
 h6,
 p {
   margin-top: 0;
+  padding: 0;
 }
 .section {
   padding-top: 94px;
@@ -30,6 +30,7 @@ p {
   padding-right: 15px;
   margin: 0 auto;
 }
+
 .link {
   color: var(--secondary-text-color);
 }
@@ -38,3 +39,8 @@ p {
   padding-left: 0px;
   margin: 0px;
 }
+/*@media (max-width: 768px) {
+  .section {
+    text-align: center;
+  }
+}*/
