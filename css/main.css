@@ -1968,7 +1968,7 @@ u {
   outline: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
   .menu-toggle {
     display: none;
   }
@@ -2122,12 +2122,7 @@ u {
     max-width: 768px;
   }
 }
-@media screen and (max-width: 768px) {
-  .header__container {
-    padding-top: 5px;
-    padding-bottom: 4px;
-    padding-right: 27px;
-  }
+@media screen and (max-width: 767px) {
   .menu__mobile {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2144,7 +2139,7 @@ u {
     width: auto;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .header__list--contact {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2262,6 +2257,45 @@ u {
   margin-right: 0;
 }
 
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .portfolio__button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  .portfolio__button--item {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
+  .portfolio__button {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .portfolio__button .portfolio__button--item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
 .portfolio__container--poster {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -2359,7 +2393,30 @@ u {
   opacity: 1;
 }
 
-@media (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 479px) {
+  .container {
+    max-width: 480px;
+  }
+  .portfolio__poster--mask {
+    width: 100%;
+  }
+  .portfolio__container--poster {
+    width: 100%;
+  }
+  .portfolio__poster {
+    width: 100%;
+  }
+  .portfolio__poster--link {
+    width: 100%;
+  }
+  .portfolio__poster--image {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container {
+    max-width: 480px;
+  }
   .portfolio__container--poster {
     width: 450px;
   }
@@ -2373,7 +2430,7 @@ u {
     width: 450px;
   }
 }
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio__container--poster {
     width: 768px;
     margin-bottom: 60px;
@@ -2386,6 +2443,11 @@ u {
   }
   .portfolio__poster--image {
     width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
   }
 }
 .team__section {
